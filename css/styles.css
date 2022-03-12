@@ -253,6 +253,12 @@
   color: white;
 }
 
+.fontBtn {
+  font-weight: bolder;
+  text-align: center;
+  color: #FAA307;
+}
+
 .margenMenuError {
   margin-top: 8rem;
 }
@@ -262,8 +268,8 @@
 }
 
 .sizeGracias {
-  width: 55%;
-  max-width: 1000px;
+  width: 60%;
+  max-width: 900px;
 }
 
 /*!
