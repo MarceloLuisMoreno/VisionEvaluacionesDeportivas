@@ -11,10 +11,10 @@
 
 .logo {
     position: fixed;
-    left: 15px;
-    top: 3px;
+    left: 45px;
+    top: 10px;
     z-index: 100;
-    max-width: 100px;
+    max-width: 140px;
 }
 
 .contenedor {
@@ -56,13 +56,13 @@
     z-index: 10;
     background: #f48c06;
     max-width: 846px;
+    margin: auto;
 }
 
 .nosotros {
     max-width: 320px;
     background-image: url("../../img/nosotros.png");
-    
-}
+    }
 .servicios {
     max-width: 320px;
     background-image: url("../../img/servicios.png");
@@ -73,7 +73,47 @@
 }
 
 .textosVarios{
-    background-color: black;
-    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
+
+.textos {
+    font-size: .9rem;
+}
+
+.textosTitulo {
+    font-size: 1.3rem;
+}
+
+.social-logo{
+    fill: #FFBA08 ;
+    :hover{
+        fill: #F48C06;
+    }
+}
+@media (max-width: 991px) {
+    .social-logo{ 
+      display: none;
+    }
+}
+
+.social-logo-footer{
+    fill: #FFBA08 ;
+    :hover{
+        fill: #F48C06;
+    }
+}
+
+.header-links{
+    a{
+
+        color: #FFBA08;
+        text-decoration: none;
+        :hover{
+            background-color: red ;
+            color: white;
+        }
+    }
+}
+
+

@@ -14,11 +14,20 @@
 
 .tituloServicio {
   color: black;
+  font-size: 1.5rem;
+
 }
 
 .sizeVideo {
-    width: 150%;
+    width: 100%;
     max-width: 847px;
     z-index: 5;
 }
 
+.centradoServicios {
+ margin-top: 5%;
+}
+
+.cardServicios {
+  font-size: .85rem;
+}
