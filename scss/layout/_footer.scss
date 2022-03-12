@@ -25,19 +25,33 @@
     font-size: 0.7rem;
 }
 
-.listaFoo ul
-{
+.textoDesarrolladores {
+    color: rgba(#FAA307,.60);
+    font-size: 0.6rem;
+    @media (max-width: 1200px) {
+        font-size: .9rem;
+       }   
+       @media (max-width: 991px) {
+           font-size: .6rem;
+          } 
+          @media (max-width: 767px) {
+           font-size: .5rem;
+          }     
+}
+
+.listaFoo ul {
     padding-right: 0px;
     padding-left: 0px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     margin: 0px;
 }
 .listaFoo li
 {
     list-style-type: none;
     display: inline;
-    margin: 15px;
+    padding-right: 30px;
+    margin: 0px;
 }
 
 .img-chrono {

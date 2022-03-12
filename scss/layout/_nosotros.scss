@@ -39,5 +39,15 @@
 }
 
 .textoNosotros {
-    font-size: .85rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    @media (max-width: 1200px) {
+     font-size: .9rem;
+    }   
+    @media (max-width: 991px) {
+        font-size: .6rem;
+       } 
+       @media (max-width: 76px) {
+        font-size: .9rem;
+       }     
 }
