@@ -19,7 +19,7 @@
 
 .head {
   background: white;
-  margin-top: 5.5rem;
+  margin-top: 5.3rem;
 }
 
 .logo {
@@ -135,6 +135,33 @@
   color: white;
 }
 
+.textoVision {
+  font-size: 1.3rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+@media (max-width: 1200px) {
+  .textoVision {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 991px) {
+  .textoVision {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 767px) {
+  .textoVision {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.7rem;
+  }
+}
+
 .estasListo {
   color: white;
   background-color: black;
@@ -175,7 +202,7 @@
 }
 
 .textoNosotros {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: justify;
 }
 @media (max-width: 1200px) {
