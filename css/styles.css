@@ -71,17 +71,17 @@
 
 .nosotros {
   max-width: 320px;
-  background-image: url("img/nosotros.png");
+  background-image: url("https://marceloluismoreno.github.io/VisionEvaluacionesDeportivas/img/nosotros.png");
 }
 
 .servicios {
   max-width: 320px;
-  background-image: url("img/servicios.png");
+  background-image: url("https://marceloluismoreno.github.io/VisionEvaluacionesDeportivas/img/servicios.png");
 }
 
 .contact {
   max-width: 320px;
-  background-image: url("img/contact.png");
+  background-image: url("https://marceloluismoreno.github.io/VisionEvaluacionesDeportivas/img/contact.png");
 }
 
 .textosVarios {
@@ -141,7 +141,7 @@
 
 .fondoNosotros {
   background: black;
-  background: url("img/imagen-sobre-nosotros-WEB.png");
+  background: url("https://marceloluismoreno.github.io/VisionEvaluacionesDeportivas/img/imagen-sobre-nosotros-WEB.png");
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@
 }
 
 .fondoContacto {
-  background: url("img/imagen-contacto-WEB.png");
+  background: url("https://marceloluismoreno.github.io/VisionEvaluacionesDeportivas/img/imagen-contacto-WEB.png");
 }
 
 .fondoFinal {
