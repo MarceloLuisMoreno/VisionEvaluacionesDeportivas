@@ -250,7 +250,22 @@
 }
 
 .cardServicios {
-  font-size: 0.85rem;
+  font-size: 1rem;
+}
+@media (max-width: 1200px) {
+  .cardServicios {
+    font-size: 0.95em;
+  }
+}
+@media (max-width: 991px) {
+  .cardServicios {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .cardServicios {
+    font-size: 0.8rem;
+  }
 }
 
 /* Footer */
