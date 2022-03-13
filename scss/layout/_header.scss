@@ -1,13 +1,12 @@
 // Headers
 
-.html{
-    white-space:nowrap;
-    }
+.html {
+    white-space: nowrap;
+}
 
-    .body {
-    display:inline-block;
-    overflow-x: hidden
-    }
+.body {
+    overflow-x: hidden;
+}
 
 .principal {
     padding: 0;
@@ -54,7 +53,7 @@
     font-size: 28px;
     z-index: 100;
 
-/*     @media (max-width: 1200px) {
+    /*     @media (max-width: 1200px) {
         width: 36px;
         height: 36px;
         bottom: 15px;
@@ -77,7 +76,8 @@
         right: 5px;
         font-size: 23px;
     }
- */}
+ */
+}
 
 .cardHeader {
     z-index: 10;
@@ -87,18 +87,36 @@
 }
 
 .nosotros {
-    max-height: 354;
     background-image: url('../img/nosotros.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .servicios {
-    max-width: 320px;
     background-image: url('../img/servicios.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .contact {
-    max-width: 320px;
     background-image: url('../img/contact.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .textosVarios {
@@ -107,7 +125,7 @@
 }
 
 .textos {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .textosTitulo {
@@ -116,6 +134,7 @@
 
 .social-logo {
     fill: #FFBA08;
+
     :hover {
         fill: #F48C06;
     }
@@ -169,4 +188,20 @@
         padding-left: 1.5rem;
         font-size: .7rem;
     }
+}
+
+
+
+.nav-raya {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.nav-raya:hover,
+.nav-raya:focus {
+    background-size: 100% 2px;
 }
