@@ -11,6 +11,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.html {
+  white-space: nowrap;
+}
+
+.body {
+  display: inline-block;
+  overflow-x: hidden;
+}
+
 .principal {
   padding: 0;
   width: 100%;
@@ -18,15 +27,15 @@
 
 .head {
   background: white;
-  margin-top: 5.3rem;
+  margin-top: 4.4rem;
 }
 
 .logo {
   position: fixed;
   left: 0.5rem;
-  top: 0.5rem;
+  top: 0.4rem;
   z-index: 100;
-  max-width: 120px;
+  max-width: 110px;
 }
 
 .contenedor {
@@ -45,43 +54,40 @@
 
 .whatsapp {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   bottom: 35px;
-  right: 5px;
+  right: 20px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 33px;
+  font-size: 28px;
   z-index: 100;
-}
-@media (max-width: 1200px) {
-  .whatsapp {
-    width: 36px;
-    height: 36px;
-    bottom: 15px;
-    right: 5px;
-    font-size: 23px;
-  }
-}
-@media (max-width: 991px) {
-  .whatsapp {
-    width: 36px;
-    height: 36px;
-    bottom: 15px;
-    right: 5px;
-    font-size: 23px;
-  }
-}
-@media (max-width: 767px) {
-  .whatsapp {
-    width: 36px;
-    height: 36px;
-    bottom: 15px;
-    right: 5px;
-    font-size: 23px;
-  }
+  /*     @media (max-width: 1200px) {
+          width: 36px;
+          height: 36px;
+          bottom: 15px;
+          right: 5px;
+          font-size: 23px;
+      }
+
+      @media (max-width: 991px) {
+          width: 36px;
+          height: 36px;
+          bottom: 15px;
+          right: 5px;
+          font-size: 23px;
+      }
+
+      @media (max-width: 767px) {
+          width: 36px;
+          height: 36px;
+          bottom: 15px;
+          right: 5px;
+          font-size: 23px;
+      }
+   */
 }
 
 .cardHeader {
@@ -92,7 +98,7 @@
 }
 
 .nosotros {
-  max-width: 320px;
+  max-height: 354;
   background-image: url("../img/nosotros.png");
 }
 
@@ -216,7 +222,7 @@
 }
 
 .textoNosotros {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 @media (max-width: 1200px) {

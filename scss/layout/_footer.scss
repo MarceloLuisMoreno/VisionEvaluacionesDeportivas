@@ -32,13 +32,13 @@
     font-size: 0.6rem;
     @media (max-width: 1200px) {
         font-size: .9rem;
-       }   
-       @media (max-width: 991px) {
-           font-size: .6rem;
-          } 
-          @media (max-width: 767px) {
-           font-size: .5rem;
-          }     
+    }
+    @media (max-width: 991px) {
+    font-size: .6rem;
+    } 
+    @media (max-width: 767px) {
+    font-size: .5rem;
+    }     
 }
 
 .listaFoo ul {
