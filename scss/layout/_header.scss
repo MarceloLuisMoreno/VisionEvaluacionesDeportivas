@@ -1,8 +1,8 @@
 // Headers
+
 .principal {
     padding: 0;
     width: 100%;
-    height: auto;
 }
 
 .head {
@@ -12,10 +12,10 @@
 
 .logo {
     position: fixed;
-    left: 45px;
-    top: 10px;
+    left: 0.5rem;
+    top: 0.5rem;
     z-index: 100;
-    max-width: 140px;
+    max-width: 120px;
 }
 
 .contenedor {
@@ -24,42 +24,51 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    font-size: 1rem
+    font-size: 1rem;
 }
-
 
 /* Barra Nav */
 .fondoNav {
     background-color: #03071E;
 }
 
-.style-nav {
-    z-index: 100;
-    background-color: #03071E;
-}
-
-
 .whatsapp {
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	bottom: 35px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 33px;
-	z-index: 100;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    right: 5px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 33px;
+    z-index: 100;
+
+    @media (max-width: 1200px) {
+        width: 36px;
+        height: 36px;
+        bottom: 15px;
+        right: 5px;
+        font-size: 23px;
+    }
+
+    @media (max-width: 991px) {
+        width: 36px;
+        height: 36px;
+        bottom: 15px;
+        right: 5px;
+        font-size: 23px;
+    }
+
     @media (max-width: 767px) {
         width: 36px;
-	height: 36px;
-	bottom: 15px;
-	right: 20px;
+        height: 36px;
+        bottom: 15px;
+        right: 5px;
         font-size: 23px;
-    }   
+    }
 }
-
 
 .cardHeader {
     z-index: 10;
@@ -71,17 +80,19 @@
 .nosotros {
     max-width: 320px;
     background-image: url('../img/nosotros.png');
-    }
+}
+
 .servicios {
     max-width: 320px;
     background-image: url('../img/servicios.png');
 }
+
 .contact {
     max-width: 320px;
     background-image: url('../img/contact.png');
 }
 
-.textosVarios{
+.textosVarios {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
@@ -94,26 +105,29 @@
     font-size: 1.3rem;
 }
 
-.social-logo{
-    fill: #FFBA08 ;
-    :hover{
+.social-logo {
+    fill: #FFBA08;
+
+    :hover {
         fill: #F48C06;
     }
 }
+
 @media (max-width: 991px) {
-    .social-logo{ 
-      display: none;
+    .social-logo {
+        display: none;
     }
 }
 
-.social-logo-footer{
-    fill: #FFBA08 ;
-    :hover{
+.social-logo-footer {
+    fill: #FFBA08;
+
+    :hover {
         fill: #F48C06;
     }
 }
 
-.header-links{
+/* .header-links{
     a{
 
         color: #FFBA08;
@@ -124,24 +138,27 @@
         }
     }
 }
-
+ */
 .textoVision {
     font-size: 1.3rem;
     padding-right: 5rem;
     padding-left: 5rem;
+
     @media (max-width: 1200px) {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         font-size: 1.3rem;
-    }   
+    }
+
     @media (max-width: 991px) {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         font-size: .95rem;
-       } 
-       @media (max-width: 767px) {
+    }
+
+    @media (max-width: 767px) {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
         font-size: .7rem;
-       }     
+    }
 }

@@ -14,7 +14,6 @@
 .principal {
   padding: 0;
   width: 100%;
-  height: auto;
 }
 
 .head {
@@ -24,10 +23,10 @@
 
 .logo {
   position: fixed;
-  left: 45px;
-  top: 10px;
+  left: 0.5rem;
+  top: 0.5rem;
   z-index: 100;
-  max-width: 140px;
+  max-width: 120px;
 }
 
 .contenedor {
@@ -44,17 +43,12 @@
   background-color: #03071E;
 }
 
-.style-nav {
-  z-index: 100;
-  background-color: #03071E;
-}
-
 .whatsapp {
   position: fixed;
   width: 50px;
   height: 50px;
   bottom: 35px;
-  right: 20px;
+  right: 5px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
@@ -62,12 +56,30 @@
   font-size: 33px;
   z-index: 100;
 }
+@media (max-width: 1200px) {
+  .whatsapp {
+    width: 36px;
+    height: 36px;
+    bottom: 15px;
+    right: 5px;
+    font-size: 23px;
+  }
+}
+@media (max-width: 991px) {
+  .whatsapp {
+    width: 36px;
+    height: 36px;
+    bottom: 15px;
+    right: 5px;
+    font-size: 23px;
+  }
+}
 @media (max-width: 767px) {
   .whatsapp {
     width: 36px;
     height: 36px;
     bottom: 15px;
-    right: 20px;
+    right: 5px;
     font-size: 23px;
   }
 }
@@ -126,15 +138,18 @@
   fill: #F48C06;
 }
 
-.header-links a {
-  color: #FFBA08;
-  text-decoration: none;
-}
-.header-links a :hover {
-  background-color: red;
-  color: white;
-}
+/* .header-links{
+    a{
 
+        color: #FFBA08;
+        text-decoration: none;
+        :hover{
+            background-color: red ;
+            color: white;
+        }
+    }
+}
+ */
 .textoVision {
   font-size: 1.3rem;
   padding-right: 5rem;
@@ -172,7 +187,6 @@
   padding: 20px;
   font-style: normal;
   font-weight: bold;
-  justify-content: center;
   color: #FFFFFF;
 }
 
@@ -240,13 +254,49 @@
 }
 
 .sizeVideo {
-  width: 100%;
+  overflow: hidden;
   max-width: 847px;
   z-index: 5;
+}
+@media (max-width: 1200px) {
+  .sizeVideo {
+    max-width: 800px;
+  }
+}
+@media (max-width: 991px) {
+  .sizeVideo {
+    max-width: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .sizeVideo {
+    max-width: 350px;
+  }
+}
+@media (max-width: 400px) {
+  .sizeVideo {
+    max-width: 320px;
+  }
+}
+
+.contenedorVideo {
+  position: relative;
+  height: 0px;
+  width: 98%;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 98%;
+  height: 98%;
 }
 
 .centradoServicios {
   margin-top: 5%;
+  padding-left: 10rem;
 }
 
 .cardServicios {
@@ -278,6 +328,8 @@
 
 .fondoContacto {
   background: url("../img/imagen-contacto-WEB.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fondoFinal {

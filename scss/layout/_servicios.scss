@@ -19,24 +19,61 @@
 }
 
 .sizeVideo {
-    width: 100%;
-    max-width: 847px;
-    z-index: 5;
+  overflow: hidden;
+  max-width: 847px;
+  z-index: 5;
+
+  @media (max-width: 1200px) {
+    max-width: 800px;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 650px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 320px;
+  }
+
+
+}
+
+.contenedorVideo {
+  position: relative;
+  height: 0px;
+  width: 98%;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 98%;
+  height: 98%;
 }
 
 .centradoServicios {
- margin-top: 5%;
+  margin-top: 5%;
+  padding-left: 10rem;
 }
 
 .cardServicios {
   font-size: 1rem;
-    @media (max-width: 1200px) {
-        font-size: .95em;
-    }   
-    @media (max-width: 991px) {
-        font-size: 1rem;
-       } 
-       @media (max-width: 767px) {
-        font-size: .8rem;
-       }     
+
+  @media (max-width: 1200px) {
+    font-size: .95em;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: .8rem;
+  }
 }

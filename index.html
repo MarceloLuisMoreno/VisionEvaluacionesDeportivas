@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="w-100">
 
     <!-- Header -->
     <section id="inicio">
@@ -62,25 +62,26 @@
             <!-- Navbar content -->
             <nav id="barraMenu" class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a href="#inicio">
+                    <a class="navbar-brand" href="#inicio">
                         <img src="./img/logoVision.png" class="logo" alt="Imagen logo Visión Evaluaciones">
                     </a>
-                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                        <ul class="  navbar-nav">
+                        <ul class="navbar-nav">
                             <li class="nav-item ">
-                                <a class=" nav-link active " aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class=" nav-item ">
-                                <a class="nav-link " href="#sobreNosotros">Sobre nosotros</a>
+                                <a class=" nav-link" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item ">
+                                <a class="nav-link" href="#sobreNosotros">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#servicios">Servicios</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
 
@@ -210,13 +211,14 @@
             </div>
         </div>
 
-        <div class="container p-1">
-            <div
-                class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 mb-3 text-center p-3">
+        <div class="container pt-5">
+            <div class="row align-content-center">
 
-                <div class="col">
-                    <div data-aos="zoom-in-up"  data-aos-duration="2500" class="rounded-3 mb-5  cardHeader nosotros">
-                        <a class="nav-link" href="#servicios">
+<!--  class="row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 mb-3 text-center p-3"-->      
+
+                <div class="col-11 col-sm-4 ">
+                    <div data-aos="zoom-in-up" data-aos-duration="2500" class="rounded-3 mb-5 nosotros">
+                        <a class="nav-link" href="#sobreNosotros">
 
                             <div class="text-black">
                                 <div class="p-5">
@@ -234,9 +236,9 @@
                     </a>
                 </div>
 
-                <div class="col">
-                    <div data-aos="zoom-in-up"  data-aos-duration="2500"  class=" rounded-3  mb-5 cardHeader servicios">
-                        <a class="nav-link" href="#sobreNosotros">
+                <div class="col-11 col-sm-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="2500" class="rounded-3  mb-5 servicios">
+                        <a class="nav-link" href="#servicios">
                             <div class="text-black">
                                 <div class="p-5">
                                     <h4 class="textosVarios textosTitulo">Servicios</h4>
@@ -250,8 +252,8 @@
                     </div>
                     </a>
                 </div>
-                <div class="col">
-                    <div data-aos="zoom-in-up"  data-aos-duration="2500" class=" rounded-3  mb-5 cardHeader contact">
+                <div class="col-11 col-sm-4">
+                    <div data-aos="zoom-in-up" data-aos-duration="2500" class=" rounded-3  mb-5 contact">
                         <a class="nav-link" href="#contacto">
                             <div class="text-black">
                                 <div class="p-5">
@@ -295,7 +297,6 @@
             <div class="container">
                 <div class="row g-5 pe-5 ps-5 ">
                     <div class="col-12 col-md-6">
-
                         <div class="card-body  fondoSobreNosotros">
                             <p class="textoNosotros p-1 m-1 g-1">Mediante un servicio integral e innovador
                                 que permite el monitoreo y la comunicación fluida bidireccional entre el atleta y el
@@ -315,10 +316,9 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img data-aos="zoom-in-up" data-aos-duration="1800"  src="img\nosotros.png" class=" w-100 margenFotoNosotros" loading="lazy"
-                            alt="card-horizontal-image">
+                        <img data-aos="zoom-in-up" data-aos-duration="1800" src="img\nosotros.png"
+                            class=" w-100 margenFotoNosotros" loading="lazy" alt="card-horizontal-image">
                     </div>
-
                 </div>
             </div>
 
@@ -338,11 +338,12 @@
             <h2 class="fs-1 mt-5">Servicios</h2>
         </div>
         <div class="container">
-            <div class="row g-1 pt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <div class="col-12 col-lg-4" >
-                    <div class="card-body centradoServicios" >
+            <div class="row pt-4" data-aos="flip-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="col-12 col-lg-3">
+                    <div class="card-body centradoServicios">
                         <h4 class="tituloServicio">Fotocélulas</h4>
-                        <p class="cardServicios">Tests simples e interválicos, test de agilidad
+                        <p class="cardServicios text-start">Tests simples e interválicos, test de agilidad
                             (20 yard, 505, Illinois, Margaria-Kalamen, Shuttle run, T-Test, ZigZag, test RSA – Aziz,
                             Balsom, Dawson, Fitzsimons, Gaitanos, Hamilton, RAST, Mujica, Wadley, Wragg).
                             <br><br>
@@ -350,19 +351,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <video class="sizeVideo 5" src="./videos/ChronoJump03.mp4" controls></video>
+                <div class="col-12 col-lg-9">
+                    <div class="contenedorVideo">
+                        <video class="video" frameborder="0" allowfullscreen="allowfullscreen"
+                            src="./videos/ChronoJump03.mp4" controls></video>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <br>
-            <div class="row g-1 pt-4" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                <div class="col-12 col-lg-4">
+            <div class="row pt-4" data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="col-12 col-lg-3">
                     <div class="card-body centradoServicios">
                         <h4 class="tituloServicio">Encoder lineal y rotatorio</h4>
-                        <p class="cardServicios">Con todas sus variables: velocidad, fuerza y
+                        <p class="cardServicios text-start">Con todas sus variables: velocidad, fuerza y
                             potencia,
                             propulsivo o no; fase concéntrica y/o excéntrica.
                             <br></br>
@@ -374,32 +378,45 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-8">
-                    <video class="sizeVideo " src="./videos/ChronoJump02.mp4" controls></video>
+                <div class="col-12 col-lg-9">
+                    <div class="contenedorVideo">
+                        <video class="video" frameborder="0" allowfullscreen="allowfullscreen"
+                            src="./videos/ChronoJump02.mp4" controls></video>
+                    </div>
+
+                    <!--                     <video class="sizeVideo" src="./videos/ChronoJump02.mp4" controls></video>
+ -->
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <br>
-            <div class="row g-1 pt-4"  data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="1000">
-                <div class="col-12 col-lg-4">
+            <div class="row pt-4" data-aos="flip-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="1000">
+                <div class="col-12 col-lg-3">
                     <div class=" card-body centradoServicios">
-                    <h4 class="tituloServicio">Plataforma de saltos</h4>
-                    <p class="cardServicios">Aptas para la realización de los test de Bosco y
-                        test de
-                        Multisaltos de manera práctica y efectiva.
-                        <br><br>
-                        <span class="textBold">Resultados:</span> medición de altura de salto, tiempo de vuelo, tiempo
-                        de contacto,
-                        Stiffness, velocidad inicial, potencia. Perfil del deportistas.
-                    </p>
+                        <h4 class="tituloServicio">Plataforma de saltos</h4>
+                        <p class="cardServicios text-start">Aptas para la realización de los test de Bosco y
+                            test de
+                            Multisaltos de manera práctica y efectiva.
+                            <br><br>
+                            <span class="textBold">Resultados:</span> medición de altura de salto, tiempo de vuelo,
+                            tiempo
+                            de contacto,
+                            Stiffness, velocidad inicial, potencia. Perfil del deportistas.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="contenedorVideo">
+                        <video class="video" frameborder="0" allowfullscreen="allowfullscreen"
+                            src="./videos/ChronoJump01.mp4" controls></video>
+                    </div>
+
+                    <!--                     <video class="sizeVideo" src="./videos/ChronoJump01.mp4" controls></video>
+ -->
                 </div>
             </div>
-            <div class="col-12 col-lg-8">
-                <video class="sizeVideo " src="./videos/ChronoJump01.mp4" controls></video>
-            </div>
-        </div>
         </div>
 
 
@@ -415,7 +432,8 @@
     <footer id="contacto">
 
         <div class="fondoContacto">
-            <div  data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-sine" class="row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 pe-4 ps-4">
+            <div data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-sine"
+                class="row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 pe-4 ps-4">
                 <div class="col text-white container-fluid contactos">
                     <div class="tituloContacto col-12 text-center">
                         <br>
@@ -442,11 +460,11 @@
                             <textarea class="form-control" name="mensaje" id="validationCustom05" style="height: 280px"
                                 placeholder="Quiero conocer más del servicio de" required></textarea>
                         </div>
-                        <div class="col-12 text-center">
+                        <div class="col-12 text-center pt-3">
                             <button type="submit" class="btn btn-warning">Enviar</button>
                         </div>
-                    </formclass=>
-                    <br>
+                        </formclass=>
+                        <br>
                 </div>
 
             </div>
@@ -507,10 +525,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
