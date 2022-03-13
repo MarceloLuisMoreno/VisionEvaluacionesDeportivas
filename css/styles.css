@@ -11,6 +11,7 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* $navbar-brand-margin-end:           2.5rem; */
 .html {
   white-space: nowrap;
 }
@@ -44,6 +45,11 @@
     margin-top: 5.2rem;
   }
 }
+@media (max-width: 400px) {
+  .head {
+    margin-top: 3rem;
+  }
+}
 
 .logo {
   position: fixed;
@@ -59,7 +65,7 @@
 }
 @media (max-width: 991px) {
   .logo {
-    max-width: 120px;
+    max-width: 80px;
   }
 }
 @media (max-width: 767px) {
@@ -69,23 +75,22 @@
 }
 @media (max-width: 400px) {
   .logo {
-    max-width: 100px;
+    max-width: 75px;
   }
 }
 
 .navbar {
   position: fixed;
-  overflow: visible;
+  overflow: hidden;
   justify-content: center !important;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  overflow-y: auto;
 }
 
 .navbar-expand-lg .nav-link {
   justify-content: center !important;
   align-items: end;
-}
-
-.navbar-toggler-icon {
-  width: 90%;
 }
 
 .navbar-nav-scroll {
@@ -114,29 +119,32 @@
   width: 45px;
   height: 45px;
   bottom: 35px;
-  right: 28px;
+  /*     right: 28px;
+  */
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 28px;
   z-index: 100;
+  bottom: 8%;
+  right: 8%;
 }
 @media (max-width: 1200px) {
   .whatsapp {
     width: 36px;
     height: 36px;
-    bottom: 26px;
     font-size: 23px;
-    right: 32px;
+    /*         right: 32px;
+    */
   }
 }
 @media (max-width: 767px) {
   .whatsapp {
     width: 36px;
     height: 36px;
-    bottom: 26px;
-    right: 28px;
+    /*         right: 28px;
+    */
     font-size: 23px;
   }
 }
@@ -144,8 +152,8 @@
   .whatsapp {
     width: 36px;
     height: 36px;
-    bottom: 22px;
-    right: 30px;
+    /*         right: 30px;
+    */
     font-size: 23px;
   }
 }
@@ -4471,7 +4479,7 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 2.5rem;
+  margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;

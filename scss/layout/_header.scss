@@ -17,6 +17,7 @@
 .head {
     background: white;
     margin-top: 6rem;
+
     @media (max-width: 1200px) {
         margin-top: 4rem;
     }
@@ -28,6 +29,11 @@
     @media (max-width: 767px) {
         margin-top: 5.2rem;
     }
+
+    @media (max-width: 400px) {
+        margin-top: 3rem;
+    }
+
 }
 
 .logo {
@@ -36,40 +42,42 @@
     left: 3px;
     max-width: 140px;
     z-index: 1200 !important;
+
     @media (max-width: 1200px) {
         max-width: 130px;
     }
 
     @media (max-width: 991px) {
-        max-width: 120px;
+        max-width: 80px;
     }
 
     @media (max-width: 767px) {
         max-width: 100px;
-}
+    }
+
     @media (max-width: 400px) {
-        max-width: 100px;
+        max-width: 75px;
     }
 
 }
 
 .navbar {
     position: fixed;
-    overflow: visible;
+    overflow: hidden;
     justify-content: center !important;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-y: auto;
 }
 
 .navbar-expand-lg .nav-link {
-        justify-content:center !important;
-        align-items: end;
+    justify-content: center !important;
+    align-items: end;
 }
 
-.navbar-toggler-icon {
-    width: 90%;
-}
 .navbar-nav-scroll {
     overflow: hidden;
-  }
+}
 
 .contenedor {
     display: flex;
@@ -93,35 +101,39 @@
     width: 45px;
     height: 45px;
     bottom: 35px;
-    right: 28px;
+    /*     right: 28px;
+ */
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
     text-align: center;
     font-size: 28px;
     z-index: 100;
+    bottom: 8%;
+    right: 8%;
+
 
     @media (max-width: 1200px) {
         width: 36px;
         height: 36px;
-        bottom: 26px;
         font-size: 23px;
-        right: 32px;
+        /*         right: 32px;
+ */
     }
 
     @media (max-width: 767px) {
         width: 36px;
         height: 36px;
-        bottom: 26px;
-        right: 28px;
+        /*         right: 28px;
+ */
         font-size: 23px;
     }
 
     @media (max-width: 393px) {
         width: 36px;
         height: 36px;
-        bottom: 22px;
-        right: 30px;
+        /*         right: 30px;
+ */
         font-size: 23px;
     }
 }
