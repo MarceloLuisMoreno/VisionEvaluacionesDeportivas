@@ -28,26 +28,26 @@
 
 .head {
   background: white;
-  margin-top: 6rem;
+  margin-top: 5.8rem;
 }
 @media (max-width: 1200px) {
   .head {
-    margin-top: 4rem;
+    margin-top: 5.5rem;
   }
 }
 @media (max-width: 991px) {
   .head {
-    margin-top: 5rem;
+    margin-top: 5.2rem;
   }
 }
 @media (max-width: 767px) {
   .head {
-    margin-top: 5.2rem;
+    margin-top: 4.5rem;
   }
 }
 @media (max-width: 400px) {
   .head {
-    margin-top: 3rem;
+    margin-top: 5.3rem;
   }
 }
 
