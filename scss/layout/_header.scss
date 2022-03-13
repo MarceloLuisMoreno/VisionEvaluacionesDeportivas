@@ -18,7 +18,7 @@
     background: white;
     margin-top: 6rem;
     @media (max-width: 1200px) {
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 
     @media (max-width: 991px) {
@@ -26,26 +26,29 @@
     }
 
     @media (max-width: 767px) {
-        margin-top: 4.5rem;
+        margin-top: 5.2rem;
     }
 }
 
 .logo {
-    padding: 1px;
-    top:0 px;
-    left: 0px;
+    position: fixed;
+    top: 6px;
+    left: 3px;
     max-width: 140px;
-    z-index: 200;
+    z-index: 1200 !important;
     @media (max-width: 1200px) {
         max-width: 130px;
     }
 
     @media (max-width: 991px) {
-        max-width: 110px;
+        max-width: 120px;
     }
 
     @media (max-width: 767px) {
-        max-width: 90px;
+        max-width: 100px;
+}
+    @media (max-width: 400px) {
+        max-width: 100px;
     }
 
 }

@@ -31,7 +31,7 @@
 }
 @media (max-width: 1200px) {
   .head {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 991px) {
@@ -41,16 +41,16 @@
 }
 @media (max-width: 767px) {
   .head {
-    margin-top: 4.5rem;
+    margin-top: 5.2rem;
   }
 }
 
 .logo {
-  padding: 1px;
-  top: 0 px;
-  left: 0px;
+  position: fixed;
+  top: 6px;
+  left: 3px;
   max-width: 140px;
-  z-index: 200;
+  z-index: 1200 !important;
 }
 @media (max-width: 1200px) {
   .logo {
@@ -59,12 +59,17 @@
 }
 @media (max-width: 991px) {
   .logo {
-    max-width: 110px;
+    max-width: 120px;
   }
 }
 @media (max-width: 767px) {
   .logo {
-    max-width: 90px;
+    max-width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    max-width: 100px;
   }
 }
 
@@ -4466,7 +4471,7 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4547,8 +4552,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4600,8 +4605,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -4653,8 +4658,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -4706,8 +4711,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -4759,8 +4764,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xxl .navbar-nav .nav-link {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .navbar-expand-xxl .navbar-nav-scroll {
     overflow: visible;
@@ -4811,8 +4816,8 @@ textarea.form-control-lg {
   position: absolute;
 }
 .navbar-expand .navbar-nav .nav-link {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .navbar-expand .navbar-nav-scroll {
   overflow: visible;
