@@ -55,28 +55,30 @@
 
     <!-- Header -->
     <section id="inicio">
-
-        <!-- Navbar -->
-        <nav class="navbar navbar-dark fixed-top p-1 fondoNav justify-content-end pe-5">
-
-            <!-- Navbar content -->
-            <nav id="barraMenu" class="navbar navbar-expand-lg navbar-light">
+        <!--         <div>
+            <a href="#inicio">
+                <img src="./img/logoVision.png" class="logo d-inline-block align-text-top"
+                    alt="Imagen logo Visión Evaluaciones">
+            </a>
+        </div>
+ -->
+        <!-- navbar -->
+        <div class="">
+            <nav class="navbar fixed-top  navbar-dark bg-dark navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#inicio">
-                        <img src="./img/logoVision.png" class="logo" alt="Imagen logo Visión Evaluaciones">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#inicio"><img src="./img/logoVision.png" class="logo"
+                            alt="Imagen logo Visión Evaluaciones"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link nav-raya" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active  nav-raya" aria-current="page" href="#">Inicio</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav-raya" href="#sobreNosotros">Sobre nosotros</a>
+                            <li class="nav-item">
+                                <a class="nav-link nav-raya" href="#sobreNosotros">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link nav-raya" href="#servicios">Servicios</a>
@@ -84,7 +86,6 @@
                             <li class="nav-item">
                                 <a class="nav-link nav-raya" href="#contacto">Contacto</a>
                             </li>
-
                             <li class="nav-item social-logo">
                                 <a class="nav-link"
                                     href="https://www.instagram.com/vision.evaluaciones.deportivas/"><svg
@@ -103,7 +104,6 @@
                                     </svg>
                                 </a>
                             </li>
-
                             <li class="nav-item social-logo">
                                 <a class="nav-link"
                                     href="https://www.facebook.com/Vision-Evaluaciones-Deportivas-102922982241002/"><svg
@@ -122,12 +122,14 @@
                                 </a>
                             </li>
 
+
                         </ul>
                     </div>
                 </div>
             </nav>
-            <br><br><br>
-        </nav>
+
+        </div>
+
         <!-- Final Navbar -->
 
         <a href="https://wa.me/5493493668635?text=Me%20gustaría%20saber%20el%20precio%20de%20" class="whatsapp"
@@ -211,12 +213,12 @@
             </div>
         </div>
 
-        <div class="container pt-5">
+        <div class="container-fluid pt-5">
 
             <!--             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3 p-1">
  -->
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-4">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10 col-md-4">
                     <div data-aos="zoom-in-up" data-aos-duration="2500" class="rounded-3 mb-5 nosotros">
                         <a class="nav-link" href="#sobreNosotros">
                             <div class="text-black">
@@ -233,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-10 col-md-4">
                     <div data-aos="zoom-in-up" data-aos-duration="2500" class="rounded-3 mb-5 servicios">
                         <a class="nav-link" href="#servicios">
                             <div class="text-black">
@@ -249,7 +251,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-10 col-md-4">
                     <div data-aos="zoom-in-up" data-aos-duration="2500" class=" rounded-3 mb-5 contact">
                         <a class="nav-link" href="#contacto">
                             <div class="text-black">
@@ -283,15 +285,15 @@
             <br><br>
 
         </div>
-        <div class="fondoNosotros">
+        <div class="fondoNosotros container-fluid">
             <div class="tituloNosotros col-12 text-center">
                 <p class="fs-1 pb-3">Sobre Nosotros</p>
             </div>
             <div class="container">
-                <div class="row g-5 pe-5 ps-5 ">
-                    <div class="col-12 col-md-6">
+                <div class="row ">
+                    <div class="col-12 col-md-6 p-5">
                         <div class="card-body  fondoSobreNosotros">
-                            <p class="textoNosotros p-1 m-1 g-1">Mediante un servicio integral e innovador
+                            <p class="card-text textoNosotros p-1 m-1 g-1">Mediante un servicio integral e innovador
                                 que permite el monitoreo y la comunicación fluida bidireccional entre el atleta y el
                                 entrenador, <span class="textBold"> ofrecemos soluciones en sistemas de medición y
                                     control de rendimiento
@@ -308,7 +310,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 p-5">
                         <img data-aos="zoom-in-up" data-aos-duration="1800" src="img\nosotros.png"
                             class=" w-100 margenFotoNosotros" loading="lazy" alt="card-horizontal-image">
                     </div>
@@ -518,10 +520,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -17,6 +17,7 @@
 
 .body {
   overflow-x: hidden;
+  padding-bottom: 70px;
 }
 
 .principal {
@@ -26,15 +27,64 @@
 
 .head {
   background: white;
-  margin-top: 4.4rem;
+  margin-top: 6rem;
+}
+@media (max-width: 1200px) {
+  .head {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 991px) {
+  .head {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .head {
+    margin-top: 4.5rem;
+  }
 }
 
 .logo {
+  padding: 1px;
+  top: 0 px;
+  left: 0px;
+  max-width: 140px;
+  z-index: 200;
+}
+@media (max-width: 1200px) {
+  .logo {
+    max-width: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .logo {
+    max-width: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .logo {
+    max-width: 90px;
+  }
+}
+
+.navbar {
   position: fixed;
-  left: 0.5rem;
-  top: 0.4rem;
-  z-index: 100;
-  max-width: 110px;
+  overflow: visible;
+  justify-content: center !important;
+}
+
+.navbar-expand-lg .nav-link {
+  justify-content: center !important;
+  align-items: end;
+}
+
+.navbar-toggler-icon {
+  width: 90%;
+}
+
+.navbar-nav-scroll {
+  overflow: hidden;
 }
 
 .contenedor {
@@ -49,6 +99,9 @@
 /* Barra Nav */
 .fondoNav {
   background-color: #03071E;
+  position: fixed !important;
+  padding: 0px !important;
+  overflow-x: hidden !important;
 }
 
 .whatsapp {
@@ -56,37 +109,40 @@
   width: 45px;
   height: 45px;
   bottom: 35px;
-  right: 20px;
+  right: 28px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 28px;
   z-index: 100;
-  /*     @media (max-width: 1200px) {
-         width: 36px;
-         height: 36px;
-         bottom: 15px;
-         right: 5px;
-         font-size: 23px;
-     }
-
-     @media (max-width: 991px) {
-         width: 36px;
-         height: 36px;
-         bottom: 15px;
-         right: 5px;
-         font-size: 23px;
-     }
-
-     @media (max-width: 767px) {
-         width: 36px;
-         height: 36px;
-         bottom: 15px;
-         right: 5px;
-         font-size: 23px;
-     }
-  */
+}
+@media (max-width: 1200px) {
+  .whatsapp {
+    width: 36px;
+    height: 36px;
+    bottom: 26px;
+    font-size: 23px;
+    right: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .whatsapp {
+    width: 36px;
+    height: 36px;
+    bottom: 26px;
+    right: 28px;
+    font-size: 23px;
+  }
+}
+@media (max-width: 393px) {
+  .whatsapp {
+    width: 36px;
+    height: 36px;
+    bottom: 22px;
+    right: 30px;
+    font-size: 23px;
+  }
 }
 
 .cardHeader {
@@ -139,7 +195,7 @@
 }
 
 .textosTitulo {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .social-logo {
@@ -205,13 +261,13 @@
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% 2px;
+  background-size: 0% 2.5px;
   transition: background-size 0.3s;
 }
 
 .nav-raya:hover,
 .nav-raya:focus {
-  background-size: 100% 2px;
+  background-size: 100% 2.5px;
 }
 
 .estasListo {
@@ -229,10 +285,18 @@
 
 .fondoNosotros {
   background: black;
-  background: url("../img/imagen-sobre-nosotros-WEB.png");
   color: white;
+  background: url("../img/imagen-sobre-nosotros-WEB.png");
+  /*     
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow-x: hidden;
+  */
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .div-sobre-nosotros {
@@ -255,6 +319,7 @@
 .textoNosotros {
   font-size: 1.1rem;
   text-align: justify;
+  columns: white;
 }
 @media (max-width: 1200px) {
   .textoNosotros {
@@ -487,7 +552,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #03071E;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -495,7 +560,7 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 3, 7, 30;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -2550,15 +2615,15 @@ progress {
 }
 
 .table-dark {
-  --bs-table-bg: #212529;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #03071E;
+  --bs-table-striped-bg: #101329;
   --bs-table-striped-color: #fff;
-  --bs-table-active-bg: #373b3e;
+  --bs-table-active-bg: #1c2035;
   --bs-table-active-color: #fff;
-  --bs-table-hover-bg: #323539;
+  --bs-table-hover-bg: #161a2f;
   --bs-table-hover-color: #fff;
   color: #fff;
-  border-color: #373b3e;
+  border-color: #1c2035;
 }
 
 .table-responsive {
@@ -3590,32 +3655,32 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #03071E;
+  border-color: #03071E;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #03061a;
+  border-color: #020618;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  background-color: #03061a;
+  border-color: #020618;
+  box-shadow: 0 0 0 0.25rem rgba(41, 44, 64, 0.5);
 }
 .btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #1a1e21;
-  border-color: #191c1f;
+  background-color: #020618;
+  border-color: #020517;
 }
 .btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(41, 44, 64, 0.5);
 }
 .btn-dark:disabled, .btn-dark.disabled {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #03071E;
+  border-color: #03071E;
 }
 
 .btn-outline-primary {
@@ -3794,27 +3859,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark {
-  color: #212529;
-  border-color: #212529;
+  color: #03071E;
+  border-color: #03071E;
 }
 .btn-outline-dark:hover {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #03071E;
+  border-color: #03071E;
 }
 .btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(3, 7, 30, 0.5);
 }
 .btn-check:checked + .btn-outline-dark, .btn-check:active + .btn-outline-dark, .btn-outline-dark:active, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #03071E;
+  border-color: #03071E;
 }
 .btn-check:checked + .btn-outline-dark:focus, .btn-check:active + .btn-outline-dark:focus, .btn-outline-dark:active:focus, .btn-outline-dark.active:focus, .btn-outline-dark.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(3, 7, 30, 0.5);
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
-  color: #212529;
+  color: #03071E;
   background-color: transparent;
 }
 
@@ -4401,7 +4466,7 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -4482,8 +4547,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4535,8 +4600,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-expand-md .navbar-nav-scroll {
     overflow: visible;
@@ -4588,8 +4653,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
@@ -4641,8 +4706,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-expand-xl .navbar-nav-scroll {
     overflow: visible;
@@ -4694,8 +4759,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-xxl .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-expand-xxl .navbar-nav-scroll {
     overflow: visible;
@@ -4746,8 +4811,8 @@ textarea.form-control-lg {
   position: absolute;
 }
 .navbar-expand .navbar-nav .nav-link {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .navbar-expand .navbar-nav-scroll {
   overflow: visible;
@@ -5345,12 +5410,12 @@ textarea.form-control-lg {
 }
 
 .alert-dark {
-  color: #141619;
-  background-color: #d3d3d4;
-  border-color: #bcbebf;
+  color: #020412;
+  background-color: #cdcdd2;
+  border-color: #b3b5bc;
 }
 .alert-dark .alert-link {
-  color: #101214;
+  color: #02030e;
 }
 
 @keyframes progress-bar-stripes {
@@ -5719,17 +5784,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-dark {
-  color: #141619;
-  background-color: #d3d3d4;
+  color: #020412;
+  background-color: #cdcdd2;
 }
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #141619;
-  background-color: #bebebf;
+  color: #020412;
+  background-color: #b9b9bd;
 }
 .list-group-item-dark.list-group-item-action.active {
   color: #fff;
-  background-color: #141619;
-  border-color: #141619;
+  background-color: #020412;
+  border-color: #020412;
 }
 
 .btn-close {
@@ -6781,10 +6846,10 @@ textarea.form-control-lg {
 }
 
 .link-dark {
-  color: #212529;
+  color: #03071E;
 }
 .link-dark:hover, .link-dark:focus {
-  color: #1a1e21;
+  color: #020618;
 }
 
 .ratio {
@@ -7206,7 +7271,7 @@ textarea.form-control-lg {
 }
 
 .border-dark {
-  border-color: #212529 !important;
+  border-color: #03071E !important;
 }
 
 .border-white {

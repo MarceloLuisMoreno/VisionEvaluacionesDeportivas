@@ -6,6 +6,7 @@
 
 .body {
     overflow-x: hidden;
+    padding-bottom: 70px;
 }
 
 .principal {
@@ -15,16 +16,57 @@
 
 .head {
     background: white;
-    margin-top: 4.4rem;
+    margin-top: 6rem;
+    @media (max-width: 1200px) {
+        margin-top: 5rem;
+    }
+
+    @media (max-width: 991px) {
+        margin-top: 5rem;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 4.5rem;
+    }
 }
 
 .logo {
-    position: fixed;
-    left: 0.5rem;
-    top: 0.4rem;
-    z-index: 100;
-    max-width: 110px;
+    padding: 1px;
+    top:0 px;
+    left: 0px;
+    max-width: 140px;
+    z-index: 200;
+    @media (max-width: 1200px) {
+        max-width: 130px;
+    }
+
+    @media (max-width: 991px) {
+        max-width: 110px;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 90px;
+    }
+
 }
+
+.navbar {
+    position: fixed;
+    overflow: visible;
+    justify-content: center !important;
+}
+
+.navbar-expand-lg .nav-link {
+        justify-content:center !important;
+        align-items: end;
+}
+
+.navbar-toggler-icon {
+    width: 90%;
+}
+.navbar-nav-scroll {
+    overflow: hidden;
+  }
 
 .contenedor {
     display: flex;
@@ -38,6 +80,9 @@
 /* Barra Nav */
 .fondoNav {
     background-color: #03071E;
+    position: fixed !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
 }
 
 .whatsapp {
@@ -45,7 +90,7 @@
     width: 45px;
     height: 45px;
     bottom: 35px;
-    right: 20px;
+    right: 28px;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
@@ -53,30 +98,29 @@
     font-size: 28px;
     z-index: 100;
 
-    /*     @media (max-width: 1200px) {
+    @media (max-width: 1200px) {
         width: 36px;
         height: 36px;
-        bottom: 15px;
-        right: 5px;
+        bottom: 26px;
         font-size: 23px;
-    }
-
-    @media (max-width: 991px) {
-        width: 36px;
-        height: 36px;
-        bottom: 15px;
-        right: 5px;
-        font-size: 23px;
+        right: 32px;
     }
 
     @media (max-width: 767px) {
         width: 36px;
         height: 36px;
-        bottom: 15px;
-        right: 5px;
+        bottom: 26px;
+        right: 28px;
         font-size: 23px;
     }
- */
+
+    @media (max-width: 393px) {
+        width: 36px;
+        height: 36px;
+        bottom: 22px;
+        right: 30px;
+        font-size: 23px;
+    }
 }
 
 .cardHeader {
@@ -95,6 +139,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 .servicios {
@@ -129,7 +174,7 @@
 }
 
 .textosTitulo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .social-logo {
@@ -197,11 +242,11 @@
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
+    background-size: 0% 2.5px;
     transition: background-size .3s;
 }
 
 .nav-raya:hover,
 .nav-raya:focus {
-    background-size: 100% 2px;
+    background-size: 100% 2.5px;
 }

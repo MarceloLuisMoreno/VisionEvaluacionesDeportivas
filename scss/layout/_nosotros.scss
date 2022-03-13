@@ -5,6 +5,7 @@
     background-color: black;
     text-align: center;
 }
+
 .tituloNosotros {
     padding: 20px;
     font-style: normal;
@@ -14,17 +15,27 @@
 
 .fondoNosotros {
     background: black;
-    background: url('../img/imagen-sobre-nosotros-WEB.png');
     color: white;
+    background: url('../img/imagen-sobre-nosotros-WEB.png');
+    /*     
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+
+
 }
 
-.div-sobre-nosotros{
+.div-sobre-nosotros {
     height: 100%;
 }
 
-.fondoSobreNosotros{
+.fondoSobreNosotros {
     background-color: black;
     opacity: .5;
     display: flex;
@@ -32,7 +43,7 @@
     height: 100%;
 }
 
-.textBold{
+.textBold {
     color: #f48c06;
     font-weight: bold;
 }
@@ -40,13 +51,17 @@
 .textoNosotros {
     font-size: 1.1rem;
     text-align: justify;
+    columns: white;
+
     @media (max-width: 1200px) {
-     font-size: .9rem;
-    }   
+        font-size: .9rem;
+    }
+
     @media (max-width: 991px) {
         font-size: .6rem;
-       } 
-       @media (max-width: 76px) {
+    }
+
+    @media (max-width: 76px) {
         font-size: .9rem;
-       }     
+    }
 }
