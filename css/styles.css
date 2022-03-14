@@ -445,6 +445,9 @@
   background: url("../img/imagen-contacto-WEB.png");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .fondoFinal {
