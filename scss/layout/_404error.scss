@@ -2,6 +2,13 @@
 
 .fondoError404 {
     background-image: url("../../img/imagen-pag404.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #03071E;
+    width: 100vh;
 }
 
 .fontError404 {

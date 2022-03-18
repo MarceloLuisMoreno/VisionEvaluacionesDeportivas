@@ -1,13 +1,24 @@
 // Página gracias
 
 .margenMenuError {
-    margin-top: 8rem;
+    margin-top: 18rem;
 }
 .fondoGracias {
     background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+
 }
 
 .sizeGracias {
     width: 60%;
-    max-width: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 550px;
 }
