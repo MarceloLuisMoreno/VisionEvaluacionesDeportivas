@@ -431,7 +431,9 @@
                     </div>
                     <h4 class="text-center">¿Cómo te podemos ayudar?</h4>
                     <p class="text-center">Contáctanos y te responderá una persona del equipo por mail</p>
-                    <formclass="row g-3 p-3 needs-validation" name="contacto" method="POST" action="./enviar.php">
+                    <form class="row g-3 p-3 needs-validation" name="contacto">
+                        <!--                         <form class="row g-3 p-3 needs-validation" name="contacto" method="post" action="./enviar.php">
+ -->
                         <div class="col-12">
                             <label for=" validationCustom01" class="form-label">Nombre</label>
                             <input type="text" name="nombre" class="form-control" id="validationCustom01"
@@ -451,10 +453,25 @@
                                 placeholder="Quiero conocer más del servicio de" required></textarea>
                         </div>
                         <div class="col-12 text-center pt-3">
-                            <button type="submit" class="btn btn-warning">Enviar</button>
+                            <input id="enviarCorreo" type="submit" class="btn btn-warning" value="Enviar"></input>
                         </div>
-                        </formclass=>
-                        <br>
+                    </form>
+                    <br>
+                    <script>
+                        const btnEnvio = document.getElementById('enviarCorreo');
+                        btnEnvio.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            const nombre = document.getElementsByName("nombre")[0].value;
+                            const email = document.getElementsByName("email")[0].value;
+                            const mensaje = document.getElementsByName("mensaje")[0].value;
+                            console.log(nombre,email,mensaje)
+                            window.location.href =`mailto:vision.evaluacionesdeportivas@gmail.com?subject=Consulta%20desde%20la%20p%C3%A1gina%20de%20Vision%20Evaluaciones%20deportivas.&body=Nombre%3A%20%20${nombre}%0ACorreo%3A%20%20${email}%0A%0AQuiero%20conocer%20m%C3%A1s%20de%20su%20servicio%2C%0A%0A${mensaje}%0A%0A%0A%20%0A`;
+                            document.getElementsByName("nombre")[0].value = "";
+                            document.getElementsByName("email")[0].value = "";
+                            document.getElementsByName("mensaje")[0].value = "";
+                        })
+                    </script>
+
                 </div>
 
             </div>
@@ -470,7 +487,7 @@
                     <ul>
                         <li class="social-logo-footer">
                             <a
-                                href="mailto:mailto:vision.evaluacionesdeportivas@gmail.com?subject=Cunsulta%20Sujeto1&body=Quiero%20consultar%20por%20su%0Servicio:%20"><svg
+                                href="mailto:vision.evaluacionesdeportivas@gmail.com?subject=Consulta%20desde%20la%20p%C3%A1gina%20de%20Vision%20Evaluaciones%20deportivas.&body=Quiero%20conocer%20m%C3%A1s%20de%20su%20servicio%2C%0A%0A%0A%0A"><svg
                                     class="social-logo-footer" width="26" height="28" viewBox="0 0 36 29" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -522,7 +539,8 @@
     <!-- Fin Seccion Footer -->
 
     <!-- Separate Popper and Bootstrap JS -->
-    <form method='POST' action='/php/enviar.php'>
+    <!--     <form method='POST' action='/php/enviar.php'>
+ -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
         </script>
@@ -533,7 +551,6 @@
     <script>
         AOS.init();
     </script>
-
 </body>
 
 </html>
